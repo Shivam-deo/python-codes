@@ -1,0 +1,25 @@
+n=25
+g=8
+print("you have total 9 gases ")
+while(1):
+    n1=int(input("Enter your no."))
+    if n1<n and g<=9:
+        print("your no. is less than hidden no.")
+        print("you have ",g,"gueses left")
+        if g==0:
+            print("Game over")
+            break
+        g=g-1
+        continue
+    if n1>n and g<=9:
+        print("your no. is greater than hidden no.")
+        print("you have ", g, "gueses left")
+        if g==0:
+            print("game over")
+            break
+        g=g-1
+        continue
+    if n1==n:
+        print("your no. is right")
+        break
+   #this is my small game in python for guessing right number....
